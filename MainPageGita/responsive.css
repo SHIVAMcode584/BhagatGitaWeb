@@ -1,0 +1,77 @@
+@media (max-width:918px){
+    .container{
+        border-top-width: 5px;
+        max-width: 700px;
+    }
+    header{
+        flex-direction: column;
+    }
+    header > h1 > .fa-grip-lines-vertical{
+        display: none;
+    }
+    .heading{
+        text-decoration: 2px underline var(--button-color);
+        text-shadow: 0 0 6px var(--txt-color);
+        margin-bottom: 1rem;
+    }
+    .secondmain , .firstmain{
+        width:90vw
+    }
+    
+}
+
+@media (max-width:700px){
+    .input-header > .select-box > label{
+        font-size: 1em;
+    }
+    .input-header >.select-box > select{
+        font-size: 1em;
+    }
+    .secondmain > button{
+        font-size: 1em;
+    }
+}
+@media (max-width: 600px){
+    .container{
+        max-width: 400px;
+    
+    }
+    .heading{
+        font-size: 1.4em;
+        
+    }
+    .firstmain{
+        width:90vw
+    }
+    .initial-info > p{
+        font-size: 1em;
+    }
+    .input-header > .select-box{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:450px){
+    .secondmain{
+        width:90vw
+    
+    }
+    .bg-btn{
+        padding:.5rem .8rem
+    }
+    .container{
+        max-width: 250px;
+    }
+    .heading{
+        font-family: 1em;
+    }
+    .input-header > .select-box > label{
+        font-size: 1em;
+    }
+    .input-header >.select-box > select{
+        font-size: .9em;
+    }
+    .secondmain > button{
+        font-size: 1em;
+    }
+}

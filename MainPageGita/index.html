@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = 'author' content="Shivam kumar">
+    <title>The Bhagwat Gita</title>
+   <!-- Favicons: Update href to the correct path to your icon files -->
+   <!-- Example: Assuming icons are in an 'assets' folder one level up from index.html -->
+   <link type="image/png" sizes="32x32" rel="icon" href='icons8-gita-64.png'>
+    <link rel = 'stylesheet' href = 'style.css'>
+    <link rel = 'stylesheet' href = 'responsive.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel ='stylesheet' href ='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class = 'om'>
+    <header >
+        <h1 class ='heading'>The Bhagwat Gita <i class="fa-solid fa-grip-lines-vertical"></i></h1>
+        <div class = 'input-header'>
+          <div class ='select-box'><label for = 'chpaterinput'>Chapter:</label>
+          <select id = 'chapterinput'>
+          </select></div>
+          <div class ='select-box'>
+            <label for="verseinput">Verse:</label>
+          <select id = 'verseinput'></select>
+
+          </div>
+          <div class = 'select-box'><butotn  id = 'searchbtn' type = 'button' aria-label = 'Search Verse'>
+          <i  class="fa-solid searchicon fa-magnifying-glass"></i>
+</div>
+          
+          </button>
+        </div>
+    </header>
+    <main class = 'firstmain'>
+        <div class="initial-info">
+        <p class = 'headingInfo'>We are going to start the <bold>Bhagwat Gita Course</bold> starting from first chapter to last chapter</p>
+    </div>
+    </main>
+    <main class = 'secondmain'>
+        <button class ='bg-btn' id = 'previous-btn' type = 'button'> <i class="fa-solid fa-arrow-left"></i> Previous Verse </button>
+        <button class = 'bg-btn' id = 'action-btn' type = 'button'>Start Learning <i class="fa-solid fa-arrow-right"></i></button>
+    </main>
+    <section class="container section-card">
+        <h1>🕉️ About the Bhagavad Gita</h1>
+
+        <pre class='etHeading eHeading'>English translation:</pre>
+
+        <p id = 'etPara'>
+          The <strong>Bhagavad Gita</strong>—often referred to as the <em>Gita</em>—is a timeless spiritual scripture that has guided millions across centuries.
+          Composed over 5,000 years ago, it is a dialogue between <strong>Lord Krishna</strong> and the warrior <strong>Arjuna</strong>,
+          set on the battlefield of <em>Kurukshetra</em>, just before the great Mahabharata war.
+        </p>
+
+        <pre class = 'ecHeading eHeading'>English explanation:</pre>
+        <p id = 'ecPara'>
+          Far more than a religious text, the Gita is a profound manual for life. It explores essential themes such as
+          <strong>duty (dharma)</strong>, <strong>selfless action (karma yoga)</strong>, <strong>devotion (bhakti yoga)</strong>,
+          and <strong>the nature of the self (atma)</strong>. Through Krishna’s divine wisdom, it teaches how to live with
+          clarity, courage, and inner peace in the midst of conflict and uncertainty.
+        </p>
+    
+        <p>
+          Whether you seek spiritual insight, ethical guidance, or personal growth, the Bhagavad Gita offers a path to harmony between
+          the material and the spiritual—helping one lead a life of <span class="highlight">purpose, compassion, and realization</span>.
+        </p>
+        <!-- <button class = 'bg-btn hindi-lang-btn' type = 'button'>Hindi Translation <i class="fa-solid fa-arrow-right"></i></button> -->
+          <!-- <div class="loading-dots">
+  <i class="fas fa-circle dot-1"></i>
+  <i class="fas fa-circle dot-2"></i>
+  <i class="fas fa-circle dot-3"></i>
+</div> -->
+      </section>
+    <!-- <main class = 'secondmain'>
+        <button class = 'bg-btn' id = 'action-btn'>Start Learning <i class="fa-solid fa-arrow-right"></i></button>
+    </main> -->
+</div>
+    <footer>
+        <p>Made with <i class="fa-solid fa-heart"></i> in India</p>
+        <p>All rights are reserved.Copyright <i class="fa-solid fa-copyright"></i> 2025</p>
+    </footer>
+<script src = 'data.js'></script>
+    <script src ='app.js'></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+*{
+    padding:0;
+    margin:0;
+}
+:root{
+    --background-color : #F5F5DC;
+    --header-footer-bc :#4E342E;
+    --hover-color:#FF6F00;
+    --txt-color:#FFD700;
+    --button-color:#556B2F;
+    --border-color:#FF6F00;
+    --secondary-txt-color:#6B4F3B;
+    
+}
+body{
+    background-color: var(--background-color);
+    margin-bottom: 1%;
+    overflow-x: hidden;
+  width:100vw
+}
+.om{
+    background-image: url('pngegg\ \(3\).png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+}
+
+header{
+    /* width: 95%; */
+    top:0;
+    left:0;
+    background-color:var(--header-footer-bc);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    padding:.8rem 0;
+    color:var(--txt-color);
+    font-family: ubuntu;
+            /* ... other styles ... */
+        padding: 0.8rem; /* 0.8rem on all sides */
+        padding-right: .8rem; /* Specifically override right side */
+        /* ... other styles ... */
+    
+    
+
+}
+.input-header{
+    display: flex;
+    gap:1rem;
+    vertical-align: middle;
+}
+.input-header >.select-box >  label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:1.5em;
+    vertical-align: middle;
+}
+.select-box{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:.3rem
+}
+.input-header >.select-box > select{
+    font-size: 1.3em;
+    font-family: ubuntu;
+    font-weight: 700;
+    border-radius: 20px;
+    color:var(--secondary-txt-color);
+    padding:.5rem
+}
+#ops-input{
+    background-color: var(--background-color);
+}
+.searchicon{
+    vertical-align: middle;
+    transform: translateY(0%);
+    font-size: 1.9em;border:1px solid white;
+     border-radius: 50%;background-color: white;
+     padding:.6rem;
+     transition: all .3s linear;
+     color:var(--header-footer-bc);
+     border:2px solid transparent;
+     transition: font-size .1s cubic-bezier(0.075, 0.82, 0.165, 1);
+     box-sizing: border-box;
+
+}
+.fa-magnifying-glass:hover{
+    border-color: var(--button-color);
+    box-shadow: 0 0 10px var(--button-color);
+    cursor: pointer;
+}
+
+.heading{
+    color:var(--txt-color);
+    font-size: 2em;
+    margin-bottom: 0;
+}
+.firstmain , .secondmain{
+  width:60vw;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    margin-top:4%;
+}
+
+.initial-info{
+    border : 1px solid var(--border-color);
+    padding:1rem;
+    box-shadow: 0 0 10px var(--border-color);
+    border-radius: 20px;
+    background-color: #E0D7C6;
+    background: linear-gradient(to right , var(--background-color) , #E0D7C6 , #E0D7C6);
+
+    
+}
+.initial-info > p{
+    color: var(--secondary-txt-color);
+    font-size: 1.3em;
+    font-family: ubuntu;
+    font-weight: 800;
+}
+
+/* section text */
+.container {
+    max-width: 800px;
+    margin: 15px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-left: 5px solid var(--border-color); /* Saffron border */
+    border-top: 0px solid var(--border-color); /* Saffron border */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container > h1 {
+    color: #800000; /* Maroon heading */
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: serif;
+  }
+
+  .container > p {
+    color: #5E5B52; /* Secondary warm text */
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  strong {
+    color: #4E342E;
+  }
+
+  em {
+    font-style: italic;
+  }
+/* For action button */
+.bg-btn{
+    background-color: var(--button-color);
+    border: none;
+    color: var(--txt-color);
+    padding:1rem 2rem;
+    font-size: 1.3em;
+    border-radius: 60px;
+    font-weight: bold;
+    font-family: ubuntu;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    border : 2px solid transparent;
+    /* margin-bottom:1rem; */
+}
+.bg-btn:hover{
+    background-color: var(--hover-color);
+    border-color: var(--border-color);
+}
+.secondmain{
+  max-width: 800px;
+  justify-content: space-between;
+  display: column;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+
+}
+.hindi-lang-btn{
+    width:40%;
+    align-self: last baseline;
+    background-color: var(--hover-color);
+    color:black
+}
+.hindi-lang-btn:hover{
+    background-color: var(--button-color);
+}
+footer{
+    /* position: static; */
+    bottom: 0;
+    left: 0;
+    /* width:100vw; */
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    padding:.4rem
+    
+}
+footer > p:first-child, 
+footer > p:last-child{
+    color:#800000;
+    font-size: 1.3em;
+    font-family: ubuntu;
+    font-weight: 800;
+
+}
+footer > p:last-child{
+    font-weight: 400;
+    font-size: 1em;
+    margin-top:1rem
+}
+
+/* content heading txt */
+.eHeading{
+    text-decoration: underline;
+    font-size: 1.4em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    color:var(--button-color);
+    display: none;
+}
+.eHeadingvisible{
+    display: inline;
+}
+
+/* Loading animation in main card */
+
+        .loading-dots {
+  display:flex;
+  gap: 0.5em; /* Adjust spacing between dots */
+}
+
+.fa-circle {
+  font-size: 1em; /* Adjust size of the dots */
+  color: #333; /* Adjust color of the dots */
+  opacity: 0.4; /* Initial opacity */
+  animation: pulse-dots 1.5s infinite; /* Apply the animation */
+}
+
+.dot-2 {
+  animation-delay: 0.5s; /* Delay the second dot */
+}
+
+.dot-3 {
+  animation-delay: 1s; /* Delay the third dot */
+}
+
+@keyframes pulse-dots {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
